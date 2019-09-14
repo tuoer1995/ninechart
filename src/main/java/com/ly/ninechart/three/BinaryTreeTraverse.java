@@ -84,6 +84,28 @@ public class BinaryTreeTraverse {
         return results;
     }
 
+    /**
+     *
+     * @param root
+     * @return
+     */
+    public static List<Integer> traverse(TreeNode root) {
+        if ( root == null) {
+            return null;
+        }
+        List<Integer> results = new ArrayList <> (  );
+        traverse ( root,results );
+        return results;
+    }
+
+    private static void traverse( TreeNode node , List<Integer> results ) {
+        if( node == null ) {
+            return;
+        }
+        traverse ( node.left,results );
+        results.add ( node.value );
+        traverse ( node.right,results );
+    }
 
 
     public static void main(String[] args) {
@@ -93,5 +115,6 @@ public class BinaryTreeTraverse {
         System.out.println(treeNodes2);
 
         System.out.println(divideConquer(TreeNode.root));
+        System.out.println(traverse (TreeNode.root));
     }
 }

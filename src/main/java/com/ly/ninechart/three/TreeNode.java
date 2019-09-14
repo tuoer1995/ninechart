@@ -4,6 +4,16 @@ import lombok.Data;
 import	java.text.DateFormat;
 
 /**
+ *
+ *                       20
+ *                     /    \
+ *                   10     30
+ *                 /   \    / \
+ *                5    12  22  32
+ *                     / \
+ *                   11   13
+ *                          \
+ *                          14
  * description:二叉树节点
  *
  * @author: tuoer
@@ -23,9 +33,10 @@ public class TreeNode {
 
     static TreeNode root ;
     static {
-        TreeNode a1 = new TreeNode(5,null,null);
+        TreeNode a1 = new TreeNode(80,null,null);
         TreeNode a2 = new TreeNode(11,null,null);
-        TreeNode a3 = new TreeNode(13,null,null);
+        TreeNode b = new TreeNode(14,null,null);
+        TreeNode a3 = new TreeNode(13,null,b);
         TreeNode a4 = new TreeNode(22,null,null);
         TreeNode a5 = new TreeNode(32,null,null);
         TreeNode a6 = new TreeNode(12,a2,a3);
