@@ -33,7 +33,7 @@ public class TreeNode {
 
     static TreeNode root ;
     static {
-        TreeNode a1 = new TreeNode(80,null,null);
+        TreeNode a1 = new TreeNode(5,null,null);
         TreeNode a2 = new TreeNode(11,null,null);
         TreeNode b = new TreeNode(14,null,null);
         TreeNode a3 = new TreeNode(13,null,b);
